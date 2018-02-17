@@ -7,7 +7,7 @@ const {
 } = wp.blocks;
 
 registerBlockType( 'mdlr/inspector-control-jsx-example', {
-	title: __( 'Inspector Control - JSX Example' ),
+	title: __( 'Inspector Control JSX Example' ),
 	description: __( 'Block description can be added here...' ),
 	icon: 'admin-settings',
 	category: 'common',
@@ -42,7 +42,7 @@ registerBlockType( 'mdlr/inspector-control-jsx-example', {
 						</InspectorControls>
 					)
 				}
-				<p>Inspector control block example built with JSX.</p>
+				<p>Block with styles that can be toggled with an inspector control. Built with JSX.</p>
 			</div>
 		);
 	},
@@ -51,7 +51,7 @@ registerBlockType( 'mdlr/inspector-control-jsx-example', {
 
 		return (
 			<div className={ className + ' ' + applyStyles }>
-				<p>Inspector control block example built with JSX.</p>
+				<p>Block with styles that can be toggled with an inspector control. Built with JSX.</p>
 			</div>
 		);
 	},
