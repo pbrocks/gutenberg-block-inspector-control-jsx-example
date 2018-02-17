@@ -70,7 +70,6 @@
 var __ = wp.i18n.__;
 var _wp$blocks = wp.blocks,
     registerBlockType = _wp$blocks.registerBlockType,
-    BlockDescription = _wp$blocks.BlockDescription,
     InspectorControls = _wp$blocks.InspectorControls,
     ToggleControl = _wp$blocks.InspectorControls.ToggleControl;
 

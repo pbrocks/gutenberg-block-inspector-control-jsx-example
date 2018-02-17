@@ -1,7 +1,6 @@
 const { __ } = wp.i18n;
 const {
 	registerBlockType,
-	BlockDescription,
 	InspectorControls,
 	InspectorControls: { ToggleControl }
 } = wp.blocks;
