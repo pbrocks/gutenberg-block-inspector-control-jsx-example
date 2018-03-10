@@ -37,11 +37,10 @@ registerBlockType( 'mdlr/inspector-control-jsx-example', {
 								checked={ !!applyStyles }
 								onChange={ onChangeStyleSettings }
 							/>
-
 						</InspectorControls>
 					)
 				}
-				<p>Block with styles that can be toggled with an inspector control. Built with JSX.</p>
+				Block with styles that can be toggled with an inspector control. Built with JSX.
 			</div>
 		);
 	},
@@ -50,7 +49,7 @@ registerBlockType( 'mdlr/inspector-control-jsx-example', {
 
 		return (
 			<div className={ className + ' ' + applyStyles }>
-				<p>Block with styles that can be toggled with an inspector control. Built with JSX.</p>
+				Block with styles that can be toggled with an inspector control. Built with JSX.
 			</div>
 		);
 	},

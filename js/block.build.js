@@ -113,11 +113,7 @@ registerBlockType('mdlr/inspector-control-jsx-example', {
 					onChange: onChangeStyleSettings
 				})
 			),
-			wp.element.createElement(
-				'p',
-				null,
-				'Block with styles that can be toggled with an inspector control. Built with JSX.'
-			)
+			'Block with styles that can be toggled with an inspector control. Built with JSX.'
 		);
 	},
 	save: function save(_ref2) {
@@ -129,11 +125,7 @@ registerBlockType('mdlr/inspector-control-jsx-example', {
 		return wp.element.createElement(
 			'div',
 			{ className: className + ' ' + applyStyles },
-			wp.element.createElement(
-				'p',
-				null,
-				'Block with styles that can be toggled with an inspector control. Built with JSX.'
-			)
+			'Block with styles that can be toggled with an inspector control. Built with JSX.'
 		);
 	}
 });
