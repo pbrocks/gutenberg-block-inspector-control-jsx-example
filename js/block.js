@@ -1,10 +1,30 @@
-const { __ } = wp.i18n;
-const {
+
+import { __ } from '@wordpress/i18n';
+
+import {
 	registerBlockType,
 	InspectorControls,
-	InspectorControls: { ToggleControl }
-} = wp.blocks;
+} from '@wordpress/blocks';
 
+import {
+	ToggleControl
+} from '@wordpress/components';
+
+import {
+	withState
+} from '@wordpress/compose';
+
+ 
+// const MyToggleControl = withState( {
+//     hasFixedBackground: false,
+// } )( ( { hasFixedBackground, setState } ) => (
+//     <ToggleControl
+//         label="Fixed Background"
+//         help={ hasFixedBackground ? 'Has fixed background.' : 'No fixed background.' }
+//         checked={ hasFixedBackground }
+//         onChange={ () => setState( ( state ) => ( { hasFixedBackground: ! state.hasFixedBackground } ) ) }
+//     />
+// ) );
 registerBlockType( 'mdlr/inspector-control-jsx-example', {
 	title: __( 'Inspector Control JSX Example' ),
 	description: __( 'Block description can be added here...' ),

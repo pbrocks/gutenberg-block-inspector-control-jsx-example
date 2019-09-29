@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Gutenberg Block: Inspector Control - JSX Example
+ * Plugin Name: Inspector Control - JSX Example
  * Plugin URI: https://github.com/modularwp/gutenberg-block-inspector-control-jsx-example
  * Description: This is an example of a Gutenberg block with an inspector control. Built with JSX and ES6.
  * Author: ModularWP

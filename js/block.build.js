@@ -65,18 +65,36 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var __ = wp.i18n.__;
-var _wp$blocks = wp.blocks,
-    registerBlockType = _wp$blocks.registerBlockType,
-    InspectorControls = _wp$blocks.InspectorControls,
-    ToggleControl = _wp$blocks.InspectorControls.ToggleControl;
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+throw new Error("Cannot find module \"@wordpress/i18n\"");
+throw new Error("Cannot find module \"@wordpress/blocks\"");
+throw new Error("Cannot find module \"@wordpress/components\"");
+throw new Error("Cannot find module \"@wordpress/compose\"");
 
 
-registerBlockType('mdlr/inspector-control-jsx-example', {
-	title: __('Inspector Control JSX Example'),
-	description: __('Block description can be added here...'),
+
+
+
+
+
+
+
+// const MyToggleControl = withState( {
+//     hasFixedBackground: false,
+// } )( ( { hasFixedBackground, setState } ) => (
+//     <ToggleControl
+//         label="Fixed Background"
+//         help={ hasFixedBackground ? 'Has fixed background.' : 'No fixed background.' }
+//         checked={ hasFixedBackground }
+//         onChange={ () => setState( ( state ) => ( { hasFixedBackground: ! state.hasFixedBackground } ) ) }
+//     />
+// ) );
+Object(__WEBPACK_IMPORTED_MODULE_1__wordpress_blocks__["registerBlockType"])('mdlr/inspector-control-jsx-example', {
+	title: Object(__WEBPACK_IMPORTED_MODULE_0__wordpress_i18n__["__"])('Inspector Control JSX Example'),
+	description: Object(__WEBPACK_IMPORTED_MODULE_0__wordpress_i18n__["__"])('Block description can be added here...'),
 	icon: 'admin-settings',
 	category: 'common',
 	attributes: {
@@ -105,10 +123,10 @@ registerBlockType('mdlr/inspector-control-jsx-example', {
 			'div',
 			{ className: className + ' ' + applyStyles },
 			!!focus && wp.element.createElement(
-				InspectorControls,
+				__WEBPACK_IMPORTED_MODULE_1__wordpress_blocks__["InspectorControls"],
 				null,
-				wp.element.createElement(ToggleControl, {
-					label: __('Apply Styles'),
+				wp.element.createElement(__WEBPACK_IMPORTED_MODULE_2__wordpress_components__["ToggleControl"], {
+					label: Object(__WEBPACK_IMPORTED_MODULE_0__wordpress_i18n__["__"])('Apply Styles'),
 					checked: !!applyStyles,
 					onChange: onChangeStyleSettings
 				})
