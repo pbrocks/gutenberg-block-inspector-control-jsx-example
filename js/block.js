@@ -2,9 +2,12 @@ const { __ } = wp.i18n;
 const {
 	registerBlockType,
 	InspectorControls,
-	InspectorControls: { ToggleControl }
 } = wp.blocks;
-
+const { ToggleControl } = wp.components;
+const {
+    BlockControls,
+} = wp.editor;
+ 
 registerBlockType( 'mdlr/inspector-control-jsx-example', {
 	title: __( 'Inspector Control JSX Example' ),
 	description: __( 'Block description can be added here...' ),
@@ -31,13 +34,13 @@ registerBlockType( 'mdlr/inspector-control-jsx-example', {
 			<div className={ className + ' ' + applyStyles }>
 				{
 					!! focus && (
-						<InspectorControls>
+						<BlockControls>
 							<ToggleControl
 								label={ __('Apply Styles') }
 								checked={ !!applyStyles }
 								onChange={ onChangeStyleSettings }
 							/>
-						</InspectorControls>
+						</BlockControls>
 					)
 				}
 				Block with styles that can be toggled with an inspector control. Built with JSX.

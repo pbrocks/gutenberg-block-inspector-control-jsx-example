@@ -70,8 +70,9 @@
 var __ = wp.i18n.__;
 var _wp$blocks = wp.blocks,
     registerBlockType = _wp$blocks.registerBlockType,
-    InspectorControls = _wp$blocks.InspectorControls,
-    ToggleControl = _wp$blocks.InspectorControls.ToggleControl;
+    InspectorControls = _wp$blocks.InspectorControls;
+var ToggleControl = wp.components.ToggleControl;
+var BlockControls = wp.editor.BlockControls;
 
 
 registerBlockType('mdlr/inspector-control-jsx-example', {
@@ -105,7 +106,7 @@ registerBlockType('mdlr/inspector-control-jsx-example', {
 			'div',
 			{ className: className + ' ' + applyStyles },
 			!!focus && wp.element.createElement(
-				InspectorControls,
+				BlockControls,
 				null,
 				wp.element.createElement(ToggleControl, {
 					label: __('Apply Styles'),

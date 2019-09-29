@@ -1,5 +1,5 @@
 module.exports = {
-	entry: './js/block.js',
+	entry: './js/index.js',
 	output: {
 		path: __dirname,
 		filename: 'js/block.build.js',
